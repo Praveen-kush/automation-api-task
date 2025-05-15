@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "968111fb-dec5-4f1e-8d95-2d64ebb59398",
+		"name": "Contract Testing",
+		"description": "# About this collection\n\nThis collection helps you set up contract tests to ensure that two separate systems are compatible and can communicate with one another.\n\n## **Using the collection**\n\n**Step 1:** Send the sample requests and view the response and test results.\n\n**Step 2:** Replace the sample request URLs with your desired API endpoints.\n\n**Step 3:** Customize the tests in the \"Tests\" tab if needed. Don't forget to save your changes.\n\n### Resources\n\n[Scripting in Postman](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)\n\n[Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)\n\n[Postman Sandbox API reference](https://learning.postman.com/docs/sending-requests/grpc/postman-sandbox-api/#writing-assertions)\n\n[Using the Collection Runner](https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/)\n\n[  \n](https://postman.postman.co/documentation/24552533-5bead607-0197-4e1d-87d4-3160bc7631c1?entity=&branch=&version=)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29692688",
+		"_collection_link": "https://www.postman.com/spaceflight-geoscientist-70361809/api-testing/collection/dmc2n0k/contract-testing?action=share&source=collection_link&creator=29692688"
+	},
+	"item": [
+		{
+			"name": "Task2",
+			"item": [
+				{
+					"name": "Fetch All Recipes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummyjson.com/recipes",
+							"protocol": "https",
+							"host": [
+								"dummyjson",
+								"com"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch a single Recipe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummyjson.com/recipes/1",
+							"protocol": "https",
+							"host": [
+								"dummyjson",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Recipe by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummyjson.com/recipes/search?q=chicken",
+							"protocol": "https",
+							"host": [
+								"dummyjson",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "chicken"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add a new Recipe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://dummyjson.com/recipes/add",
+							"protocol": "https",
+							"host": [
+								"dummyjson",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Recipe",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyjson.com/recipes/1",
+							"protocol": "https",
+							"host": [
+								"dummyjson",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a recipe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://dummyjson.com/recipes/1",
+							"protocol": "https",
+							"host": [
+								"dummyjson",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "key",
+			"value": "f4c9f79c31c05853a6c2d45fd2253b16"
+		},
+		{
+			"key": "token",
+			"value": "ATTAf37bccf97e919e93ff46529f9ff66cad5ef459d8a11915bb49b5fbe2430123c6BA2461FA",
+			"type": "string"
+		},
+		{
+			"key": "secret",
+			"value": "c3d4db9a69c7938823f158ef1baaa2f6df4808e2f3196d7e0fb5d51c6953cf21",
+			"type": "string"
+		}
+	]
+}
